@@ -13,6 +13,9 @@ struct ContentView: View {
     @State var counter = 0
     @State var message = ""
     var body: some View {
+        ZStack{
+            Color(.gray)
+        }
         VStack {
             Text("\(counter) cookies eaten")
                 .font(.title)
@@ -28,6 +31,9 @@ struct ContentView: View {
                 
                 else if counter >= 20 {
                     message = "Don't eat too much cookies☹️"
+                    
+                    
+                    
                 }
                 
             }label:{
